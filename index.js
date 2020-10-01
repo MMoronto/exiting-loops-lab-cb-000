@@ -13,11 +13,17 @@ function breakOut(array, changeValue, stopValue) {
 function keepGoing(array, changeValue, skipValue) {
   for (let i = 0, l = array.length; i < l; i++) {
     if (array[i] === skipValue) {
-      continue
+      continue;
     }
     array[i] = changeValue;
   }
   return array;
 }
 
-function 
+function findBy(array, findFn) {
+  for (let i = 0, l = array.length; i < l; i++) {
+    if (array[i] === value) {
+      return array[i]
+    }
+  }
+}
